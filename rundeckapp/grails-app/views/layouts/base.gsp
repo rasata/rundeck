@@ -74,6 +74,7 @@
 
     <!-- VUE CSS MODULES -->
     <asset:stylesheet href="static/css/components/motd.css"/>
+    <asset:stylesheet href="static/css/components/version.css"/>
     <asset:stylesheet href="static/css/components/tour.css"/>
     <g:if test="${grailsApplication.config.rundeck.communityNews.disabled.isEmpty() ||!grailsApplication.config.rundeck.communityNews.disabled in [false,'false']}">
       <asset:stylesheet href="static/css/components/community-news-notification.css"/>
@@ -263,6 +264,7 @@
 
 <!-- VUE JS MODULES -->
 <asset:javascript src="static/components/motd.js"/>
+<asset:javascript src="static/components/version.js"/>
 <asset:javascript src="static/components/tour.js"/>
 <g:if test="${grailsApplication.config.rundeck.communityNews.disabled.isEmpty() ||!grailsApplication.config.rundeck.communityNews.disabled in [false,'false']}">
   <asset:javascript src="static/components/community-news-notification.js"/>
