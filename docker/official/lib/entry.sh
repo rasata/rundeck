@@ -58,8 +58,7 @@ fi
 
 exec java \
     -XX:+UnlockExperimentalVMOptions \
-    -XX:MaxRAMFraction="${JVM_MAX_RAM_FRACTION}" \
-    -XX:+UseCGroupMemoryLimitForHeap \
+    -XX:MaxRAMPercentage="${JVM_MAX_RAM_PERCENTAGE}" \
     -Dloginmodule.conf.name=jaas-loginmodule.conf \
     -Dloginmodule.name=rundeck \
     -Drundeck.jaaslogin=true \
